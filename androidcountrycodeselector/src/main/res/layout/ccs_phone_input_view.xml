@@ -14,10 +14,10 @@
             android:layout_marginRight="32dp"
             android:gravity="center"
             android:focusable="true"
-            android:background="@drawable/select_country_selector"
-            android:drawableEnd="@drawable/wrap_ic_arrow_drop_down_black_24dp"
-            android:drawableRight="@drawable/wrap_ic_arrow_drop_down_black_24dp"
-            android:text="@string/choose_a_country"/>
+            android:background="@drawable/ccs_select_country_selector"
+            android:drawableEnd="@drawable/ccs_wrap_ic_arrow_drop_down_black_24dp"
+            android:drawableRight="@drawable/ccs_wrap_ic_arrow_drop_down_black_24dp"
+            android:text="@string/ccs_choose_a_country"/>
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -29,7 +29,7 @@
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_add_gray"/>
+                app:srcCompat="@drawable/ccs_ic_add_gray"/>
         <EditText
                 android:id="@+id/edit_country_code"
                 android:layout_width="48dp"
@@ -51,6 +51,6 @@
                 android:maxLength="17"
                 android:inputType="phone"
                 android:textSize="16sp"
-                android:hint="@string/phone_hint"/>
+                android:hint="@string/ccs_phone_hint"/>
     </LinearLayout>
 </LinearLayout>

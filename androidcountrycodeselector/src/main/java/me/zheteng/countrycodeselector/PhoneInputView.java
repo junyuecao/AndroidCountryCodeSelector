@@ -76,7 +76,7 @@ public class PhoneInputView extends FrameLayout {
 
         public void onTextChanged(CharSequence s, int start, int before, int after) {
             if (s.length() == 0) {
-                mCountryName.setText(R.string.choose_a_country);
+                mCountryName.setText(R.string.ccs_choose_a_country);
             } else {
                 Country country = getCountryByCode(s.toString());
 
@@ -84,7 +84,7 @@ public class PhoneInputView extends FrameLayout {
                     mCountryName.setText(country.getName());
                     mPhoneNumber.requestFocus();
                 } else {
-                    mCountryName.setText(R.string.invalid_country_code);
+                    mCountryName.setText(R.string.ccs_invalid_country_code);
                 }
             }
         }
@@ -106,10 +106,10 @@ public class PhoneInputView extends FrameLayout {
         super(context, attrs, defStyleAttr);
         mContext = context;
 
-        final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.PhoneInputView, defStyleAttr, 0);
+        final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ccs_PhoneInputView, defStyleAttr, 0);
 
         final LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        final int layoutResId = a.getResourceId(R.styleable.PhoneInputView_ccs_layout, R.layout.phone_input_view);
+        final int layoutResId = a.getResourceId(R.styleable.ccs_PhoneInputView_ccs_layout, R.layout.ccs_phone_input_view);
         inflater.inflate(layoutResId, this, true);
 
         mCountryName = (TextView) findViewById(R.id.select_country);
@@ -117,7 +117,7 @@ public class PhoneInputView extends FrameLayout {
         mPhoneNumber = (EditText) findViewById(R.id.edit_phone_number);
 
         // theme color
-        mThemeColor = a.getColor(R.styleable.PhoneInputView_ccs_theme_color,
+        mThemeColor = a.getColor(R.styleable.ccs_PhoneInputView_ccs_theme_color,
                 ContextCompat.getColor(context, R.color.ccs_default_color));
         mCountryName.getBackground().setColorFilter(mThemeColor, PorterDuff.Mode.SRC_ATOP);
         Drawable[] drawables = mCountryName.getCompoundDrawables();
@@ -130,7 +130,7 @@ public class PhoneInputView extends FrameLayout {
         mCountryCode.getBackground().setColorFilter(mThemeColor, PorterDuff.Mode.SRC_ATOP);
 
         // country selector type
-        mCountrySelectorType = a.getInt(R.styleable.PhoneInputView_ccs_country_selector_type, SELECTOR_TYPE_ACTIVITY);
+        mCountrySelectorType = a.getInt(R.styleable.ccs_PhoneInputView_ccs_country_selector_type, SELECTOR_TYPE_ACTIVITY);
 
         // add listeners
         mCountryName.setOnClickListener(mOnClickListener);

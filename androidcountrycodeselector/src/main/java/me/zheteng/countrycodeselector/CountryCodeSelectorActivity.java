@@ -26,9 +26,9 @@ public class CountryCodeSelectorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_country_selector);
+        setContentView(R.layout.ccs_activity_country_selector);
 
-        setTitle(R.string.choose_a_country);
+        setTitle(R.string.ccs_choose_a_country);
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.container, CountryCodeSelectorFragment.newInstance(getIntent()))
                 .commit();

@@ -58,7 +58,7 @@ public class CountryCodeSelectorFragment extends DialogFragment implements TextW
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_country_code_selector, container, false);
+        View view = inflater.inflate(R.layout.ccs_fragment_country_code_selector, container, false);
 
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -67,7 +67,7 @@ public class CountryCodeSelectorFragment extends DialogFragment implements TextW
         mAdapter.setList(mCountryList);
 
         if (mType == PhoneInputView.SELECTOR_TYPE_DIALOG) {
-            getDialog().setTitle(R.string.choose_a_country);
+            getDialog().setTitle(R.string.ccs_choose_a_country);
 
             int width = getResources().getDimensionPixelSize(R.dimen.ccs_dialog_width);
             int height = getResources().getDimensionPixelSize(R.dimen.ccs_dialog_height);
@@ -119,11 +119,11 @@ public class CountryCodeSelectorFragment extends DialogFragment implements TextW
             RecyclerView.ViewHolder holder = null;
             switch (viewType) {
                 case VIEW_TYPE_ITEM:
-                    view = inflater.inflate(R.layout.item_country, parent, false);
+                    view = inflater.inflate(R.layout.ccs_item_country, parent, false);
                     holder = new CountryViewHolder(view);
                     break;
                 case VIEW_TYPE_SEARCH:
-                    view = inflater.inflate(R.layout.item_search, parent, false);
+                    view = inflater.inflate(R.layout.ccs_item_search, parent, false);
                     holder = new SearchViewHolder(view);
                     break;
             }

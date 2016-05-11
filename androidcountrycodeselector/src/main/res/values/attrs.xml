@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="PhoneInputView">
+    <declare-styleable name="ccs_PhoneInputView">
         <attr name="ccs_layout" format="reference"/>
         <attr name="ccs_phone_hint" format="reference"/>
         <attr name="ccs_theme_color" format="reference|color"/>

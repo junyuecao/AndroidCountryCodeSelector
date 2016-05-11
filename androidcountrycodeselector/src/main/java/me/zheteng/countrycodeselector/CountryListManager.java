@@ -26,7 +26,7 @@ public class CountryListManager {
         if (INSTANCE == null) {
             synchronized(CountryListManager.class) {
                 if (INSTANCE == null) {
-                    INSTANCE = new CountryListManager(context.getResources().openRawResource(R.raw.countries));
+                    INSTANCE = new CountryListManager(context.getResources().openRawResource(R.raw.ccs_countries));
                 }
             }
         }
