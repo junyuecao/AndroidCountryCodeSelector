@@ -5,7 +5,9 @@ This is a simple library which makes it easier to pick a country code when input
 
 ## Screenshots
 
+![Screenshot1](https://github.com/junyuecao/AndroidCountryCodeSelector/blob/master/screenshots/screenshot1.png?raw=true)
 
+![Screenshot2](https://github.com/junyuecao/AndroidCountryCodeSelector/blob/master/screenshots/screenshot2.png?raw=true)
 
 ## Usage
 
