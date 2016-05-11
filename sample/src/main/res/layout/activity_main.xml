@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".MainActivity">
+    <me.zheteng.countrycodeselector.PhoneInputView
+            app:ccs_theme_color="#14b4c2"
+            app:ccs_country_selector_type="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </me.zheteng.countrycodeselector.PhoneInputView>
+
+</RelativeLayout>

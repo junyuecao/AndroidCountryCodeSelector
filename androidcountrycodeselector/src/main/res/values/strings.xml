@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidCountryCodeSelector</string>
+    <string name="phone_hint">Phone number</string>
+    <string name="search_hint">Search …</string>
+    <string name="invalid_country_code">Invalid country code</string>
+    <string name="choose_a_country">Choose a country</string>
+</resources>

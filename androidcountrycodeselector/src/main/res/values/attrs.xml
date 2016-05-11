@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PhoneInputView">
+        <attr name="ccs_layout" format="reference"/>
+        <attr name="ccs_phone_hint" format="reference"/>
+        <attr name="ccs_theme_color" format="reference|color"/>
+        <attr name="ccs_country_selector_type" format="enum">
+            <enum name="activity" value="0"/>
+            <enum name="dialog" value="1"/>
+        </attr>
+        <!--<attr format="color" name="ccs_"/>-->
+    </declare-styleable>
+</resources>

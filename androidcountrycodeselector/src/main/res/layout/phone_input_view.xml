@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:id="@+id/select_country"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:gravity="center"
+            android:focusable="true"
+            android:background="@drawable/select_country_selector"
+            android:drawableEnd="@drawable/wrap_ic_arrow_drop_down_black_24dp"
+            android:drawableRight="@drawable/wrap_ic_arrow_drop_down_black_24dp"
+            android:text="@string/choose_a_country"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_add_gray"/>
+        <EditText
+                android:id="@+id/edit_country_code"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/ccs_default_color"
+                android:backgroundTintMode="src_atop"
+                android:maxLength="3"
+                android:inputType="phone"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="1"/>
+        <EditText
+                android:id="@+id/edit_phone_number"
+                android:backgroundTint="@color/ccs_default_color"
+                android:backgroundTintMode="src_atop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="17"
+                android:inputType="phone"
+                android:textSize="16sp"
+                android:hint="@string/phone_hint"/>
+    </LinearLayout>
+</LinearLayout>
