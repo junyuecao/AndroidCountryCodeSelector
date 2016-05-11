@@ -16,12 +16,12 @@ This is a simple library which makes it easier to pick a country code when input
 -----
 ```xml
 <me.zheteng.countrycodeselector.PhoneInputView
-            app:ccs_theme_color="#14b4c2"
-            app:ccs_country_selector_type="dialog"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        app:ccs_theme_color="#14b4c2"
+        app:ccs_country_selector_type="dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    </me.zheteng.countrycodeselector.PhoneInputView>
+</me.zheteng.countrycodeselector.PhoneInputView>
 ```
 
 
@@ -29,8 +29,8 @@ This is a simple library which makes it easier to pick a country code when input
 
 ```Java
 getSupportFragmentManager().beginTransaction()
-                .add(R.id.container, CountryCodeSelectorFragment.newInstance(getIntent()))
-                .commit();
+            .add(R.id.container, CountryCodeSelectorFragment.newInstance(getIntent()))
+            .commit();
 ```
 
 
