@@ -13,7 +13,7 @@ This is a simple library which makes it easier to pick a country code when input
 
 ```
 dependencies {
-    compile 'me.zheteng:androidcountrycodeselector:0.1.0'
+    compile 'me.zheteng:androidcountrycodeselector:0.1.1'
 }
 ```
 

@@ -1,5 +1,4 @@
 <resources>
-    <string name="ccs_app_name">AndroidCountryCodeSelector</string>
     <string name="ccs_phone_hint">Phone number</string>
     <string name="ccs_search_hint">Search …</string>
     <string name="ccs_invalid_country_code">Invalid country code</string>
