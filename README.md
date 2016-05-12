@@ -42,6 +42,9 @@ app:ccs_country_selector_type="dialog|activity"
 #### `CountryCodeSelectorFragment` as a fragment
 
 ```Java
+Intent intent = new Intent();
+intent.putExtra(PhoneInputView.EXTRA_THEME_COLOR, ContextCompat.getColor(mActivity, R.color.primary));
+
 getSupportFragmentManager().beginTransaction()
             .add(R.id.container, CountryCodeSelectorFragment.newInstance(getIntent()))
             .commit();
@@ -51,8 +54,12 @@ getSupportFragmentManager().beginTransaction()
 #### `CountryCodeSelectorFragment` as a dialog
 
 ```
+Intent intent = new Intent();
+intent.putExtra(PhoneInputView.EXTRA_SELECTOR_TYPE, PhoneInputView.SELECTOR_TYPE_DIALOG);
+intent.putExtra(PhoneInputView.EXTRA_THEME_COLOR, ContextCompat.getColor(mActivity, R.color.primary));
+
 final CountryCodeSelectorFragment picker = CountryCodeSelectorFragment.newInstance(intent);
-picker.show(context.getSupportFragmentManager(), "COUNTRY_CODE_PICKER");
+picker.show(context.getSupportFragmentManager(), "CountryCodeSelector");
 
 picker.setOnCountrySelectListener(new CountryCodeSelectorFragment.OnCountrySelectListener() {
     @Override
