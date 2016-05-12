@@ -9,9 +9,7 @@ This is a simple library which makes it easier to pick a country code when input
 
 ![Screenshot2](https://github.com/junyuecao/AndroidCountryCodeSelector/blob/master/screenshots/screenshot2.png?raw=true)
 
-## Usage
-
-0. Add to dependencies in `build.gradle`
+## Add to dependencies in `build.gradle`
 
 ```
 dependencies {
@@ -19,21 +17,29 @@ dependencies {
 }
 ```
 
-1. PhoneInputView
+## Usage
+
+#### Using PhoneInputView
 
 -----
 ```xml
 <me.zheteng.countrycodeselector.PhoneInputView
-        app:ccs_theme_color="#14b4c2"
-        app:ccs_country_selector_type="dialog"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    app:ccs_theme_color="#14b4c2"
+    app:ccs_country_selector_type="dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
 </me.zheteng.countrycodeselector.PhoneInputView>
 ```
 
+XML attributes:
 
-2. `CountryCodeSelectorFragment` as a fragment
+```
+app:ccs_theme_color="color"
+app:ccs_country_selector_type="dialog|activity"
+```
+
+#### `CountryCodeSelectorFragment` as a fragment
 
 ```Java
 getSupportFragmentManager().beginTransaction()
@@ -42,7 +48,7 @@ getSupportFragmentManager().beginTransaction()
 ```
 
 
-3. `CountryCodeSelectorFragment` as a dialog
+#### `CountryCodeSelectorFragment` as a dialog
 
 ```
 final CountryCodeSelectorFragment picker = CountryCodeSelectorFragment.newInstance(intent);
