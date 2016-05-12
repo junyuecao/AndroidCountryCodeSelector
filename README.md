@@ -62,6 +62,7 @@ picker.setOnCountrySelectListener(new CountryCodeSelectorFragment.OnCountrySelec
 });
 ```
 
+## Pull request is welcome especially the strings translation.
 
 License
 -------
