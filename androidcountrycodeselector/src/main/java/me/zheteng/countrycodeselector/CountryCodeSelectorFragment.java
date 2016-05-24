@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
@@ -225,7 +226,7 @@ public class CountryCodeSelectorFragment extends DialogFragment implements TextW
 
             Intent intent = new Intent(PhoneInputView.ACTION_SEND_RESULT);
             intent.putExtra(PhoneInputView.EXTRA_COUNTRY, country);
-            getActivity().sendBroadcast(intent);
+            LocalBroadcastManager.getInstance(getActivity()).sendBroadcast(intent);
 
             if (mOnCountrySelectListener != null) {
                 mOnCountrySelectListener.onCountrySelect(country);
